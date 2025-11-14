@@ -1,0 +1,29 @@
+{
+  "hooks": {
+    "SessionStart": {
+      "command": "bash",
+      "args": [".claude/hooks/SessionStart.sh"]
+    },
+    "PostToolUse": {
+      "command": "bash",
+      "args": [".claude/hooks/PostToolUse.sh", "$TOOL_NAME", "$TOOL_ARGS"]
+    },
+    "PreToolUse": {
+      "command": "bash",
+      "args": [".claude/hooks/PreToolUse.sh", "$TOOL_NAME", "$TOOL_ARGS"]
+    }
+  },
+  "permissions": {
+    "defaultMode": "ask",
+    "allow": {
+      "Read": ["*"],
+      "Grep": ["*"],
+      "Glob": ["*"],
+      "TodoWrite": ["*"]
+    },
+    "deny": {
+      "Write": ["*.env", ".env.*"],
+      "Edit": ["*.env", ".env.*"]
+    }
+  }
+}
