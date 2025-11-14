@@ -17,6 +17,34 @@
       "env": {
         "POSTGRES_CONNECTION_STRING": "${DATABASE_URL}"
       }
+    },
+    "context7": {
+      "command": "npx",
+      "args": ["-y", "@context7/mcp-server"],
+      "description": "Access documentation for React, Next.js, TypeScript, and 100+ libraries"
+    },
+    "tavily": {
+      "command": "npx",
+      "args": ["-y", "@tavily/mcp-server"],
+      "env": {
+        "TAVILY_API_KEY": "${TAVILY_API_KEY}"
+      },
+      "description": "Web search capabilities for research and data gathering"
+    },
+    "playwright": {
+      "command": "npx",
+      "args": ["-y", "@playwright/mcp-server"],
+      "description": "Browser automation for testing and screenshots"
+    },
+    "sentry": {
+      "command": "npx",
+      "args": ["-y", "@sentry/mcp-server"],
+      "env": {
+        "SENTRY_AUTH_TOKEN": "${SENTRY_AUTH_TOKEN}",
+        "SENTRY_ORG": "${SENTRY_ORG}",
+        "SENTRY_PROJECT": "${SENTRY_PROJECT}"
+      },
+      "description": "Error tracking and monitoring integration"
     }
   }
 }

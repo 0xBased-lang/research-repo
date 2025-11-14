@@ -92,7 +92,7 @@ research-repo/
 
 This framework includes 6 specialized agents:
 
-| Agent | Purpose | Model |
+| Agent | Purpose | Model* |
 |-------|---------|-------|
 | **architect-agent** | System design, architecture decisions, technical planning | Opus |
 | **backend-agent** | APIs, business logic, server-side development | Sonnet |
@@ -101,10 +101,13 @@ This framework includes 6 specialized agents:
 | **devops-agent** | CI/CD, deployment, infrastructure, monitoring | Sonnet |
 | **security-agent** | Security audits, vulnerability scanning, compliance | Opus |
 
+**\*Model Flexibility:** The model field is a **recommendation**, not a requirement! All agents work perfectly with Sonnet. Use Opus only for complex reasoning. Out of Opus credits? No problem - just use Sonnet for everything. See **[MODEL_SELECTION.md](docs/MODEL_SELECTION.md)** for details.
+
 **How to use agents:**
 ```
 Just ask Claude to invoke them in conversation:
 "Use the architect agent to design this system"
+"Use the backend agent with Sonnet to create this API"
 "Have the security agent audit the authentication code"
 ```
 
@@ -137,13 +140,30 @@ Automated quality enforcement:
 
 ## 🔌 MCP Integration
 
-Pre-configured MCP servers:
+Pre-configured MCP servers (7 total):
 
 - **Filesystem** - Enhanced file operations
 - **GitHub** - GitHub API integration
 - **PostgreSQL** - Direct database access
+- **Context7** - Access docs for React, Next.js, TypeScript, 100+ libraries
+- **Tavily** - Web search capabilities
+- **Playwright** - Browser automation and testing
+- **Sentry** - Error tracking and monitoring
 
-Configure in `.mcp.json`
+Configure in `.mcp.json` - just add your API keys to `.env`
+
+## 🔗 Popular Integrations
+
+Framework includes guides and agent knowledge for:
+
+- **Supabase** - Database + Auth + Storage
+- **Prisma** - Type-safe ORM with migrations
+- **Redis** - Caching and rate limiting
+- **Stripe** - Payment processing
+- **SendGrid/Resend** - Email services
+- **AWS S3** - File storage
+
+See **[INTEGRATIONS.md](docs/INTEGRATIONS.md)** for complete setup guides
 
 ---
 
@@ -151,20 +171,33 @@ Configure in `.mcp.json`
 
 ### Essential Reading
 
-1. **[FRAMEWORK_GUIDE.md](docs/FRAMEWORK_GUIDE.md)** - Complete framework documentation
+1. **[FRAMEWORK_GUIDE.md](docs/FRAMEWORK_GUIDE.md)** - Complete framework documentation (500+ lines)
    - Architecture blueprint
    - Agent hierarchy
    - Workflow patterns
    - Development guidelines
    - Deployment strategies
 
-2. **[CLAUDE.md](CLAUDE.md)** - Project-specific guidelines
+2. **[INTEGRATIONS.md](docs/INTEGRATIONS.md)** - Popular service integrations
+   - Supabase, Prisma, Redis setup
+   - Stripe payment processing
+   - Email services (SendGrid, Resend)
+   - MCP server configurations
+   - Environment variables guide
+
+3. **[MODEL_SELECTION.md](docs/MODEL_SELECTION.md)** - Model flexibility & cost optimization
+   - When to use Opus vs Sonnet vs Haiku
+   - Cost optimization strategies
+   - How to override model preferences
+   - No agent fails without Opus credits!
+
+4. **[CLAUDE.md](CLAUDE.md)** - Project-specific guidelines
    - Code standards
    - Common patterns
    - Git workflow
    - Testing requirements
 
-3. **[Agent Orchestration](docs/architecture/AGENT_ORCHESTRATION.md)** - How to use agents effectively
+5. **[Agent Orchestration](docs/architecture/AGENT_ORCHESTRATION.md)** - How to use agents effectively
 
 ---
 
@@ -411,24 +444,22 @@ git push -u origin feature/my-feature
 
 ### Environment Variables
 
-Each project should have `.env.example`:
+A comprehensive `.env.example` is included with 100+ variables for:
 
-```bash
-# Application
-NODE_ENV=production
-PORT=3000
+- **Databases:** PostgreSQL, Supabase, Redis
+- **Authentication:** JWT, OAuth (Google, GitHub)
+- **Payments:** Stripe
+- **Email:** SendGrid, Resend, SMTP
+- **Cloud Storage:** AWS S3, Cloudinary
+- **Monitoring:** Sentry, logging
+- **MCP Servers:** GitHub, Tavily, Sentry
+- **Feature Flags:** Enable/disable features
 
-# Database
-DATABASE_URL=postgresql://user:pass@localhost:5432/db
+Copy `.env.example` to `.env` and fill in your values.
 
-# Redis
-REDIS_URL=redis://localhost:6379
+**Never commit `.env` files!** Only commit `.env.example`
 
-# Authentication
-JWT_SECRET=your-secret-key
-```
-
-Never commit `.env` files - use `.env.example` instead.
+See **[INTEGRATIONS.md](docs/INTEGRATIONS.md)** for service-specific setup guides.
 
 ---
 
@@ -465,11 +496,20 @@ A: Use `/new-project <type> <name>` or follow the templates
 **Q: Which agent should I use?**
 A: See [Agent Orchestration Guide](docs/architecture/AGENT_ORCHESTRATION.md)
 
+**Q: What if I run out of Opus credits?**
+A: No problem! All agents work perfectly with Sonnet. The model field is just a recommendation. See [MODEL_SELECTION.md](docs/MODEL_SELECTION.md)
+
+**Q: How do I integrate Supabase/Prisma/Redis/Stripe?**
+A: See [INTEGRATIONS.md](docs/INTEGRATIONS.md) for complete setup guides with code examples
+
 **Q: How do I run security audits?**
 A: Use `/security-audit full`
 
 **Q: Can I customize the framework?**
 A: Yes! Modify agents, commands, and hooks as needed
+
+**Q: Which MCP servers are pre-configured?**
+A: Filesystem, GitHub, PostgreSQL, Context7, Tavily, Playwright, Sentry. Just add API keys to `.env`
 
 ---
 
