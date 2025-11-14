@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="THOMA GmbH - Ihr Partner für Brandschutztechnik, RWA-Anlagen und Tageslichttechnik in der Region Balingen-Reutlingen-Tübingen-Böblingen-Sindelfingen">
+    <meta name="keywords" content="Brandschutz, RWA, Rauch- und Wärmeabzug, Tageslichttechnik, Balingen, Reutlingen">
+    <title>THOMA GmbH | Brandschutztechnik · RWA · Tageslichttechnik</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <svg viewBox="0 0 50 50" class="logo-icon">
+                        <rect x="5" y="5" width="40" height="40" rx="4" fill="currentColor" opacity="0.1"/>
+                        <path d="M15 15 L25 25 L35 15 M15 35 L25 25 L35 35" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round"/>
+                    </svg>
+                    <span class="logo-text">THOMA<span class="logo-suffix">GmbH</span></span>
+                </div>
+                <button class="mobile-menu-toggle" aria-label="Menu öffnen">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#leistungen" class="nav-link">Leistungen</a></li>
+                    <li><a href="#expertise" class="nav-link">Expertise</a></li>
+                    <li><a href="#referenzen" class="nav-link">Referenzen</a></li>
+                    <li><a href="#ueber-uns" class="nav-link">Über uns</a></li>
+                    <li><a href="#kontakt" class="nav-link btn-primary-nav">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M8 0L9.79611 6.20389L16 8L9.79611 9.79611L8 16L6.20389 9.79611L0 8L6.20389 6.20389L8 0Z" fill="currentColor"/>
+                    </svg>
+                    <span>Ihre Sicherheit ist unser Auftrag</span>
+                </div>
+                <h1 class="hero-title">
+                    Innovative Lösungen für<br>
+                    <span class="gradient-text">Brandschutz & Gebäudetechnik</span>
+                </h1>
+                <p class="hero-description">
+                    THOMA GmbH ist Ihr zuverlässiger Partner für professionelle Brandschutztechnik,
+                    RWA-Anlagen und moderne Tageslichtsysteme in der Region Baden-Württemberg.
+                </p>
+                <div class="hero-cta">
+                    <a href="#kontakt" class="btn btn-primary">
+                        Jetzt Beratung anfragen
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <a href="#leistungen" class="btn btn-secondary">
+                        Unsere Leistungen
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">25+</div>
+                        <div class="stat-label">Jahre Erfahrung</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Projekte realisiert</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Qualitätsgarantie</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="visual-card card-1">
+                    <div class="card-icon">🔥</div>
+                    <h3>Brandschutz</h3>
+                    <p>Zertifizierte Systeme</p>
+                </div>
+                <div class="visual-card card-2">
+                    <div class="card-icon">💨</div>
+                    <h3>RWA-Anlagen</h3>
+                    <p>Moderne Technologie</p>
+                </div>
+                <div class="visual-card card-3">
+                    <div class="card-icon">☀️</div>
+                    <h3>Tageslichttechnik</h3>
+                    <p>Energieeffizient</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="leistungen">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">Unsere Leistungen</div>
+                <h2 class="section-title">Kompetenz in drei<br>Kernbereichen</h2>
+                <p class="section-description">
+                    Von der Planung über die Installation bis zur Wartung – wir bieten Ihnen
+                    Komplettlösungen aus einer Hand.
+                </p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-delay="0">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 64 64" fill="none">
+                            <circle cx="32" cy="32" r="30" stroke="currentColor" stroke-width="2" opacity="0.2"/>
+                            <path d="M32 12 L38 28 L32 24 L26 28 Z M32 24 L32 52" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="32" cy="52" r="4" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>Brandschutztechnik</h3>
+                    <p>
+                        Professionelle Brandschutzlösungen nach den neuesten DIN-Normen und Vorschriften.
+                        Wir planen, installieren und warten Brandschutzsysteme für höchste Sicherheit.
+                    </p>
+                    <ul class="service-features">
+                        <li>Brandmeldeanlagen</li>
+                        <li>Rauchschutztüren & -tore</li>
+                        <li>Feuerlöschtechnik</li>
+                        <li>Brandschutzkonzepte</li>
+                    </ul>
+                    <a href="#kontakt" class="service-link">
+                        Mehr erfahren
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="service-card featured" data-aos="fade-up" data-delay="100">
+                    <div class="service-badge">Beliebt</div>
+                    <div class="service-icon">
+                        <svg viewBox="0 0 64 64" fill="none">
+                            <circle cx="32" cy="32" r="30" stroke="currentColor" stroke-width="2" opacity="0.2"/>
+                            <path d="M20 32 C20 32 26 20 32 20 C38 20 44 32 44 32 M20 32 C20 32 26 44 32 44 C38 44 44 32 44 32" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                            <path d="M32 28 L32 36 M28 32 L36 32" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>RWA-Anlagen</h3>
+                    <p>
+                        Rauch- und Wärmeabzugsanlagen (RWA) für optimale Sicherheit im Brandfall.
+                        Intelligente Systeme für automatische und manuelle Entrauchung.
+                    </p>
+                    <ul class="service-features">
+                        <li>Natürliche Rauchabzugsanlagen</li>
+                        <li>Maschinelle Entrauchung</li>
+                        <li>RWA-Steuerungen</li>
+                        <li>Wartung & Prüfung</li>
+                    </ul>
+                    <a href="#kontakt" class="service-link">
+                        Mehr erfahren
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-delay="200">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 64 64" fill="none">
+                            <circle cx="32" cy="32" r="30" stroke="currentColor" stroke-width="2" opacity="0.2"/>
+                            <circle cx="32" cy="20" r="6" fill="currentColor"/>
+                            <path d="M26 26 L20 44 M32 26 L32 44 M38 26 L44 44" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                            <rect x="16" y="44" width="32" height="4" rx="2" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>Tageslichttechnik</h3>
+                    <p>
+                        Moderne Tageslichtsysteme für natürliche Beleuchtung und Energieeffizienz.
+                        Lichtkuppeln, Lichtbänder und intelligente Steuerungssysteme.
+                    </p>
+                    <ul class="service-features">
+                        <li>Lichtkuppeln & Lichtbänder</li>
+                        <li>Rauchabzugskuppeln</li>
+                        <li>Sonnenschutzsysteme</li>
+                        <li>Automatische Steuerungen</li>
+                    </ul>
+                    <a href="#kontakt" class="service-link">
+                        Mehr erfahren
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section class="expertise" id="expertise">
+        <div class="container">
+            <div class="expertise-wrapper">
+                <div class="expertise-content">
+                    <div class="section-badge">Unsere Expertise</div>
+                    <h2 class="section-title">Warum THOMA GmbH?</h2>
+                    <p class="expertise-intro">
+                        Mit über 25 Jahren Erfahrung sind wir Ihr verlässlicher Partner für
+                        alle Fragen rund um Brandschutz und Gebäudetechnik.
+                    </p>
+                    <div class="expertise-items">
+                        <div class="expertise-item">
+                            <div class="expertise-icon">✓</div>
+                            <div class="expertise-text">
+                                <h4>Zertifizierte Qualität</h4>
+                                <p>Alle Arbeiten nach DIN-Normen und gesetzlichen Vorgaben</p>
+                            </div>
+                        </div>
+                        <div class="expertise-item">
+                            <div class="expertise-icon">✓</div>
+                            <div class="expertise-text">
+                                <h4>Erfahrenes Team</h4>
+                                <p>Fachkräfte mit langjähriger Expertise und regelmäßigen Schulungen</p>
+                            </div>
+                        </div>
+                        <div class="expertise-item">
+                            <div class="expertise-icon">✓</div>
+                            <div class="expertise-text">
+                                <h4>Rundum-Service</h4>
+                                <p>Von Beratung über Installation bis Wartung – alles aus einer Hand</p>
+                            </div>
+                        </div>
+                        <div class="expertise-item">
+                            <div class="expertise-icon">✓</div>
+                            <div class="expertise-text">
+                                <h4>Regionale Nähe</h4>
+                                <p>Schnelle Reaktionszeiten in der gesamten Region</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#kontakt" class="btn btn-primary">Jetzt beraten lassen</a>
+                </div>
+                <div class="expertise-visual">
+                    <div class="cert-card">
+                        <div class="cert-icon">🏆</div>
+                        <h4>ISO 9001</h4>
+                        <p>Zertifiziert</p>
+                    </div>
+                    <div class="cert-card">
+                        <div class="cert-icon">🛡️</div>
+                        <h4>DIN Konform</h4>
+                        <p>Geprüft</p>
+                    </div>
+                    <div class="cert-card">
+                        <div class="cert-icon">⚡</div>
+                        <h4>24/7 Service</h4>
+                        <p>Verfügbar</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Referenzen Section -->
+    <section class="references" id="referenzen">
+        <div class="container">
+            <div class="section-header centered">
+                <div class="section-badge">Referenzen</div>
+                <h2 class="section-title">Erfolgreiche Projekte</h2>
+                <p class="section-description">
+                    Vertrauen Sie auf unsere Erfahrung – hier ein Auszug unserer realisierten Projekte
+                </p>
+            </div>
+            <div class="references-grid">
+                <div class="reference-card">
+                    <div class="reference-image">
+                        <div class="reference-placeholder">
+                            <svg viewBox="0 0 100 100" fill="none">
+                                <rect width="100" height="100" fill="url(#grad1)"/>
+                                <path d="M30 70 L50 30 L70 70 Z" stroke="white" stroke-width="2" fill="none"/>
+                                <defs>
+                                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="reference-content">
+                        <h4>Industriekomplex Reutlingen</h4>
+                        <p>Komplette RWA-Anlage und Brandschutzsystem für 15.000m² Produktionsfläche</p>
+                        <div class="reference-tags">
+                            <span>RWA</span>
+                            <span>Brandschutz</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="reference-card">
+                    <div class="reference-image">
+                        <div class="reference-placeholder">
+                            <svg viewBox="0 0 100 100" fill="none">
+                                <rect width="100" height="100" fill="url(#grad2)"/>
+                                <circle cx="50" cy="50" r="20" stroke="white" stroke-width="2" fill="none"/>
+                                <defs>
+                                    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#f093fb;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#f5576c;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="reference-content">
+                        <h4>Gewerbezentrum Tübingen</h4>
+                        <p>Tageslichtsysteme mit automatischer Steuerung für optimale Energieeffizienz</p>
+                        <div class="reference-tags">
+                            <span>Tageslicht</span>
+                            <span>Automation</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="reference-card">
+                    <div class="reference-image">
+                        <div class="reference-placeholder">
+                            <svg viewBox="0 0 100 100" fill="none">
+                                <rect width="100" height="100" fill="url(#grad3)"/>
+                                <rect x="35" y="35" width="30" height="30" stroke="white" stroke-width="2" fill="none"/>
+                                <defs>
+                                    <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#4facfe;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#00f2fe;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="reference-content">
+                        <h4>Bürogebäude Böblingen</h4>
+                        <p>Modernisierung der Brandschutztechnik inkl. Wartungsvertrag</p>
+                        <div class="reference-tags">
+                            <span>Brandschutz</span>
+                            <span>Wartung</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="ueber-uns">
+        <div class="container">
+            <div class="about-wrapper">
+                <div class="about-image">
+                    <div class="about-placeholder">
+                        <svg viewBox="0 0 400 500" fill="none">
+                            <rect width="400" height="500" fill="url(#aboutGrad)" rx="12"/>
+                            <circle cx="200" cy="200" r="80" stroke="white" stroke-width="3" opacity="0.3"/>
+                            <circle cx="200" cy="200" r="60" stroke="white" stroke-width="3" opacity="0.5"/>
+                            <circle cx="200" cy="200" r="40" stroke="white" stroke-width="3" opacity="0.7"/>
+                            <text x="200" y="380" font-size="24" fill="white" text-anchor="middle" opacity="0.8">THOMA GmbH</text>
+                            <defs>
+                                <linearGradient id="aboutGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <div class="section-badge">Über uns</div>
+                    <h2 class="section-title">Ihr Partner für Sicherheit<br>und Innovation</h2>
+                    <p>
+                        Die THOMA GmbH ist seit über 25 Jahren Ihr kompetenter Partner für Brandschutztechnik,
+                        RWA-Anlagen und Tageslichtsysteme in der Region Baden-Württemberg.
+                    </p>
+                    <p>
+                        Unser erfahrenes Team aus Fachplanern, Technikern und Servicemitarbeitern
+                        garantiert Ihnen höchste Qualität bei allen Projekten – von der ersten Beratung
+                        über die fachgerechte Installation bis zur regelmäßigen Wartung.
+                    </p>
+                    <div class="about-values">
+                        <div class="value-item">
+                            <strong>Qualität</strong>
+                            <p>Höchste Standards in allen Bereichen</p>
+                        </div>
+                        <div class="value-item">
+                            <strong>Zuverlässigkeit</strong>
+                            <p>Termintreue und professionelle Umsetzung</p>
+                        </div>
+                        <div class="value-item">
+                            <strong>Innovation</strong>
+                            <p>Moderne Technologien und Lösungen</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="kontakt">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="section-badge">Kontakt</div>
+                    <h2 class="section-title">Lassen Sie uns sprechen</h2>
+                    <p>
+                        Haben Sie Fragen zu unseren Leistungen oder möchten Sie ein konkretes
+                        Projekt besprechen? Kontaktieren Sie uns – wir freuen uns auf Ihre Anfrage!
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none">
+                                    <path d="M3 5a2 2 0 0 1 2-2h3.28a1 1 0 0 1 .948.684l1.498 4.493a1 1 0 0 1-.502 1.21l-2.257 1.13a11.042 11.042 0 0 0 5.516 5.516l1.13-2.257a1 1 0 0 1 1.21-.502l4.493 1.498a1 1 0 0 1 .684.949V19a2 2 0 0 1-2 2h-1C9.716 21 3 14.284 3 6V5z" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Telefon</h4>
+                                <a href="tel:+497433123456">+49 (0) 7433 / 12 34 56</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none">
+                                    <rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M3 7l9 6 9-6" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>E-Mail</h4>
+                                <a href="mailto:info@thoma-gmbh.de">info@thoma-gmbh.de</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none">
+                                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" stroke="currentColor" stroke-width="2"/>
+                                    <circle cx="12" cy="9" r="2.5" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Adresse</h4>
+                                <p>Musterstraße 123<br>72336 Balingen</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none">
+                                    <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Öffnungszeiten</h4>
+                                <p>Mo-Fr: 08:00 - 17:00 Uhr<br>Sa: Nach Vereinbarung</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="Ihr Name">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">E-Mail *</label>
+                                <input type="email" id="email" name="email" required placeholder="ihre@email.de">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Telefon</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+49 123 456789">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Betreff *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Bitte wählen</option>
+                                <option value="brandschutz">Brandschutztechnik</option>
+                                <option value="rwa">RWA-Anlagen</option>
+                                <option value="tageslicht">Tageslichttechnik</option>
+                                <option value="wartung">Wartung & Service</option>
+                                <option value="sonstiges">Sonstiges</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Nachricht *</label>
+                            <textarea id="message" name="message" required rows="5" placeholder="Ihre Nachricht an uns..."></textarea>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <label>
+                                <input type="checkbox" name="privacy" required>
+                                <span>Ich habe die Datenschutzerklärung zur Kenntnis genommen *</span>
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            Nachricht senden
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M18 2L9 11M18 2L12 18L9 11M18 2L2 8L9 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <svg viewBox="0 0 50 50" class="logo-icon">
+                            <rect x="5" y="5" width="40" height="40" rx="4" fill="currentColor" opacity="0.2"/>
+                            <path d="M15 15 L25 25 L35 15 M15 35 L25 25 L35 35" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round"/>
+                        </svg>
+                        <span class="logo-text">THOMA<span class="logo-suffix">GmbH</span></span>
+                    </div>
+                    <p class="footer-description">
+                        Ihr zuverlässiger Partner für Brandschutztechnik, RWA-Anlagen und
+                        Tageslichtsysteme in Baden-Württemberg.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="XING">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18.188 0c-.517 0-.741.325-.927.66 0 0-7.455 13.224-7.702 13.657.015.024 4.919 9.023 4.919 9.023.17.308.436.66.967.66h3.454c.211 0 .375-.078.463-.22.089-.151.089-.346-.009-.536l-4.879-8.916c-.004-.006-.004-.016 0-.022L22.139.756c.095-.191.097-.387.006-.535C22.056.078 21.894 0 21.686 0h-3.498zM3.648 4.74c-.211 0-.385.074-.473.216-.09.149-.078.339.02.531l2.34 4.05c.004.01.004.016 0 .021L1.86 16.051c-.099.188-.093.381 0 .529.085.142.239.234.45.234h3.461c.518 0 .766-.348.945-.649l3.734-6.609-2.378-4.155c-.172-.315-.434-.66-.962-.66H3.648v.001z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Leistungen</h4>
+                    <ul>
+                        <li><a href="#leistungen">Brandschutztechnik</a></li>
+                        <li><a href="#leistungen">RWA-Anlagen</a></li>
+                        <li><a href="#leistungen">Tageslichttechnik</a></li>
+                        <li><a href="#kontakt">Wartung & Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Unternehmen</h4>
+                    <ul>
+                        <li><a href="#ueber-uns">Über uns</a></li>
+                        <li><a href="#referenzen">Referenzen</a></li>
+                        <li><a href="#kontakt">Kontakt</a></li>
+                        <li><a href="#karriere">Karriere</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Service-Gebiet</h4>
+                    <ul class="footer-locations">
+                        <li>Balingen</li>
+                        <li>Reutlingen</li>
+                        <li>Tübingen</li>
+                        <li>Böblingen</li>
+                        <li>Sindelfingen</li>
+                        <li>& Umgebung</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 THOMA GmbH. Alle Rechte vorbehalten.</p>
+                <div class="footer-links">
+                    <a href="#impressum">Impressum</a>
+                    <a href="#datenschutz">Datenschutz</a>
+                    <a href="#agb">AGB</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop" aria-label="Nach oben scrollen">
+        <svg viewBox="0 0 24 24" fill="none">
+            <path d="M12 19V5M12 5L5 12M12 5L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
