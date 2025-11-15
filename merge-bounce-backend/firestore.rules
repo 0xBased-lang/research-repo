@@ -1,0 +1,83 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Helper functions
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    function isOwner(userId) {
+      return isAuthenticated() && request.auth.uid == userId;
+    }
+
+    // Users collection
+    match /users/{userId} {
+      allow read: if isAuthenticated();
+      allow write: if isOwner(userId);
+    }
+
+    // Saves collection
+    match /saves/{userId} {
+      allow read, write: if isOwner(userId);
+    }
+
+    // Leaderboards - read-only, writes via cloud functions
+    match /leaderboards/{document=**} {
+      allow read: if true;
+      allow write: if false; // Only via cloud functions
+    }
+
+    // Matchmaking queue
+    match /matchmaking/queue/players/{userId} {
+      allow read: if isAuthenticated();
+      allow write: if isOwner(userId);
+    }
+
+    // Matches
+    match /matches/{matchId} {
+      allow read: if isAuthenticated();
+      allow write: if isAuthenticated(); // Players can update their scores
+    }
+
+    // Transactions - read-only for user, writes via cloud functions
+    match /transactions/{transactionId} {
+      allow read: if isAuthenticated() && resource.data.userId == request.auth.uid;
+      allow write: if false; // Only via cloud functions
+    }
+
+    // Challenges - read-only
+    match /challenges/{document=**} {
+      allow read: if true;
+      allow write: if false; // Only via cloud functions
+    }
+
+    // Progress
+    match /progress/{userId}/{document=**} {
+      allow read, write: if isOwner(userId);
+    }
+
+    // Friends
+    match /friends/{userId}/{document=**} {
+      allow read: if isAuthenticated();
+      allow write: if isOwner(userId);
+    }
+
+    // Clans
+    match /clans/{clanId} {
+      allow read: if true;
+      allow write: if isAuthenticated();
+
+      match /members/{memberId} {
+        allow read: if true;
+        allow write: if isAuthenticated();
+      }
+    }
+
+    // Analytics - write-only via cloud functions
+    match /analytics/{document=**} {
+      allow read: if false;
+      allow write: if false; // Only via cloud functions
+    }
+  }
+}
