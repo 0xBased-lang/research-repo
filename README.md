@@ -14,13 +14,17 @@ Comprehensive research on building customer-facing applications with passive inc
 - **CUSTOMER_APP_RESEARCH.md** - Main 60+ page research report
 - **QUICK_REFERENCE_GUIDE.md** - One-page cheat sheet for quick decisions
 - **APP_IDEA_EVALUATION_TEMPLATE.md** - Framework for scoring app ideas
+- **APP_IDEAS_BRAINSTORM_2025.md** - 15 detailed app ideas with full analysis
+- **IDEA_COMPARISON_MATRIX.md** - Quick comparison matrix and decision filters
 
-**Status:** ✅ Research Complete
+**Status:** ✅ Research Complete | ✅ Brainstorming Complete
 
 **Quick Start:**
 1. Read `QUICK_REFERENCE_GUIDE.md` for overview (10 min)
-2. Use `APP_IDEA_EVALUATION_TEMPLATE.md` to evaluate ideas (30 min per idea)
-3. Reference `CUSTOMER_APP_RESEARCH.md` for deep dives on specific topics
+2. Review `APP_IDEAS_BRAINSTORM_2025.md` for 15 validated ideas (30 min)
+3. Use `IDEA_COMPARISON_MATRIX.md` to narrow to top 3 ideas (15 min)
+4. Score finalists with `APP_IDEA_EVALUATION_TEMPLATE.md` (30 min each)
+5. Reference `CUSTOMER_APP_RESEARCH.md` for deep dives on specific topics
 
 **Key Findings:**
 - Mobile-first is mandatory (66% of traffic)
@@ -38,7 +42,9 @@ research-repo/
 ├── README.md                              # This file
 ├── CUSTOMER_APP_RESEARCH.md               # Customer app research (main)
 ├── QUICK_REFERENCE_GUIDE.md               # Quick reference cheat sheet
-└── APP_IDEA_EVALUATION_TEMPLATE.md        # App idea evaluation framework
+├── APP_IDEA_EVALUATION_TEMPLATE.md        # App idea evaluation framework
+├── APP_IDEAS_BRAINSTORM_2025.md           # 15 validated app ideas
+└── IDEA_COMPARISON_MATRIX.md              # Decision matrix and comparisons
 ```
 
 ---
